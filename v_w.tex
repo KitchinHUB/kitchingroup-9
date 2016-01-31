@@ -1,0 +1,421 @@
+%% ****** Start of file template.aps ****** %
+%%
+%%
+%%   This file is part of the APS files in the REVTeX 4 distribution.
+%%   Version 4.0 of REVTeX, August 2001
+%%
+%%
+%%   Copyright (c) 2001 The American Physical Society.
+%%
+%%   See the REVTeX 4 README file for restrictions and more information.
+%
+% Group addresses by affiliation; use superscriptaddress for long
+% author lists, or if there are many overlapping affiliations.
+% For Phys. Rev. appearance, change preprint to twocolumn.
+% Choose pra, prb, prc, prd, pre, prl, prstab, or rmp for journal
+%  Add 'draft' option to mark overfull boxes with black boxes
+%  Add 'showpacs' option to make PACS codes appear
+%  Add 'showkeys' option to make keywords appear
+%\documentclass[aps,prl,preprint,superscriptaddress,endfloats*,showkeys]{revtex4}
+\documentclass[aps,prl,twocolumn,superscriptaddress,showkeys]{revtex4}
+\usepackage{graphicx}
+
+\begin{document}
+
+% Use the \preprint command to place your local institutional report
+% number in the upper righthand corner of the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+% Use the 'preprintnumbers' class option to override journal defaults
+% to display numbers if necessary
+%\preprint{}
+
+%Title of paper
+\title{The role of strain and ligand effects in the modification of
+  the electronic and chemical properties of bimetallic surfaces}
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro foreach each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+\author{J. R. Kitchin}
+\affiliation{Center for Catalytic Science and Technology, Department of Chemical Engineering, University of Delaware,
+  Newark, DE 19716}
+
+\author{J. K. N{\o}rskov}
+\affiliation{Center for Atomic-scale Materials Physics and Department
+  of Physics, Technical University of Denmark, DK-2800 Lyngby,
+  Denmark}
+
+\author{M. A. Barteau}
+\author{J. G. Chen}
+\affiliation{Center for Catalytic Science and Technology, Department of Chemical Engineering, University of Delaware, Newark, DE 19716}
+
+\date{\today}
+
+\begin{abstract}
+Periodic density functional calculations are used to illustrate how
+the combination of strain and ligand effects modify the electronic
+and surface chemical properties of Ni, Pd, and Pt monolayers
+supported on other transition metals. Strain and the ligand effects
+are shown to change the width of the surface $d$-band, which
+subsequently moves up or down in energy to maintain a constant band
+filling. Chemical properties such as the dissociative adsorption
+energy of hydrogen are controlled by changes induced in the
+average energy of the $d$-band by modification of the $d$-band
+width.
+\end{abstract}
+
+% insert suggested PACS numbers in braces on next line
+\pacs{}
+% insert suggested keywords - APS authors don't need to do this
+\keywords{Bimetallic surfaces, strain, ligand effect, DFT, matrix element,
+  hydrogen, adsorption, $d$-band}
+
+%\maketitle must follow title, authors, abstract, \pacs, and \keywords
+\maketitle
+
+%The chemical properties of metals can be modified by alloying them
+%with another metal \cite{sinfelt1983}. 
+Numerous surface science studies have shown that the chemisorption
+properties of supported monolayers of one metal on another metal can
+be dramatically different than those of the parent metals
+\cite{goodman1990:_chemis,campbell1992:_chemic,rodriguez1992}. There
+are two primary mechanisms for modification of the chemical properties
+of these surfaces. First, the average bond lengths between the metal
+atoms in the supported monolayer surface are typically different than
+those in the parent metals, resulting in changes due to strain.
+Second, heterometallic bonding interactions, termed the ``ligand
+effect'', between the surface atoms and the substrate can result in
+modification of the surface electronic structure, thereby changing the
+surface chemical properties.  However, it has been difficult to
+separate the strain and ligand effects, even in surface science
+studies, because they usually occur together. In other words, one
+typically observes the cumulative effect of the two phenomena.  One
+notable recent success was the deconvolution of these two effects for
+heteroepitaxial layers of Pt on Ru(0001) using a combination of
+experiments and theory
+\cite{schlapka2003:_surfac_strain_subst_inter_heter_metal_layer}, but
+this work succeeded only in explaining the behavior of a single
+system.
+
+
+Mavrikakis \emph{et al.} used density functional (DFT) calculations to show
+that strain modifies the chemical properties of surfaces by changing
+the average energy of the $d$-band
+\cite{mavrikakis1998:_effec_strain_metal}. DFT was also recently used
+to illustrate the ligand effect, by showing that the presence of
+subsurface 3d metals in Pt(111) surfaces broadens the Pt surface
+$d$-band.  The width of the surface $d$-band was found to be proportional
+to the interatomic matrix element that describes bonding interactions
+between the $d$-orbitals of the Pt surface atoms and the $d$-orbitals of
+the subsurface 3d metal atoms
+\cite{kitchin2004:_modif_surfac_elect_chemic_proper}. As a consequence
+of the band broadening, the average energy of the $d$-band moved down in
+energy in order to conserve the $d$-band filling, resulting in
+modifications of the surface chemical properties.
+
+In the current Letter, we present a simple explanation for the
+electronic modifications induced by strain and ligand effects in
+bimetallic surfaces, as well as the effects of these modifications on
+the chemical properties of these surfaces. We will show that the width
+of the $d$-band is modified by both strain and the ligand effect, and
+that the effects of these two mechanisms are cumulative.  The $d$-band
+width is found to be proportional to the interatomic matrix element
+describing bonding between the $d$-orbitals of an atom and the
+$d$-orbitals of its nearest neighbors. The average energy of the $d$-band is
+increased or decreased depending on whether the band becomes narrower
+or wider due to the combination of strain and ligand effects to
+maintain a constant $d$-band filling. Finally,  changes in chemical
+properties of these bimetallic surfaces due to the combined strain and
+ligand effects can be traced to changes in the average energy of the
+surface $d$-band associated with the changes in $d$-band width.
+
+The supported monolayer calculations were performed using DACAPO on
+three layer slabs of the closest-packed surface for the substrate crystal
+structure (fcc(111), bcc(110), or hcp(0001).) The surface
+layer of the slab was replaced with the monolayer metal in the bulk
+truncated position.  In our notation, PtW designates a pseudomorphic
+monolayer of Pt on a W(110) surface, NiRu designates a pseudomorphic
+Ni monolayer on Ru(0001), and NiPt designates a pseudomorphic Ni
+monolayer on Pt(111).  Relaxation of the slab was allowed in some
+cases, and the effects of this are discussed later.  The slabs were
+periodically repeated in $2\times2$ super cells, and the ionic cores
+were represented by Vanderbilt ultrasoft pseudopotentials.  The
+Kohn-Sham one-electron orbitals were expanded using planewaves up to a
+350 eV cutoff energy.  The Brillouin zone was sampled either by a
+Chadi-Cohen grid of 18 k-points or a $4\times4\times1$ Monkhorst-Pack
+grid. The trends and conclusions in this work were independent of this
+choice.  The PW91 functional was used to describe exchange and
+correlation. Properties of the $d$-band were calculated by projecting
+the Kohn-Sham orbitals onto spherical harmonics centered on the atomic
+sites.
+
+We first examine whether the formation of the bimetallic surfaces
+alters the filling of the surface $d$-band. Changes in the $d$-band
+filling would indicate charge transfer between the two metals, and
+could be one of the mechanisms for chemical modification.  In all
+cases the change in $d$-band filling was typically less than 2\% in
+magnitude on formation of the bimetallic surface. We interpreted these
+as negligible changes.  Furthermore, the magnitude and sign of the
+change is basis set dependent; the magnitudes decrease and the sign
+can change if a cutoff radius is used to limit overcounting from
+neighboring sites. Thus, these changes may not be meaningful, aside
+from the observation that they are small. We also found that the
+$d$-band filling does not change when strain is artificially introduced
+ despite strain-induced changes in the $d$-band width.
+
+As shown for a rectangular band model, if the $d$-band filling remains
+constant but the $d$-band width changes, then the average energy of the
+$d$-band (the $d$-band center) must change to conserve both the $d$-band
+filling and the total number of $d$-states
+\cite{kitchin2004:_modif_surfac_elect_chemic_proper}. Figure
+\ref{fig:momentcorrelations} shows the correlation between the root
+mean squared (rms) $d$-band width and the $d$-band center for both
+unrelaxed and relaxed slabs. The slope of the correlation is
+nearly -1, as predicted by the rectangular band
+model. Thus, as the $d$-band becomes wider it moves down in energy,
+and as it narrows it moves up in energy. The non-zero intercept is
+likely an artifact of the gaussian broadening used in the projection
+of the density of states onto atomic orbitals to account for the
+finite number of k-points used in the calculations. This prevents the
+$d$-band width from going to zero in the atomic limit as it should.
+
+\begin{figure}
+\includegraphics{Fig1}
+\caption{Correlation between the root mean squared (rms) $d$-band width
+  and $d$-band center for bimetallic surfaces.\label{fig:momentcorrelations}}
+\end{figure}
+
+The width of the $d$-band can be related to the interatomic matrix
+element that describes bonding between an atom and its environment
+\cite{harrison1989}.  The matrix element describing the bonding
+interactions between the $d$-states on two atoms
+of type 1 and type 2 is given by
+\cite{harrison1989}
+%
+\begin{equation}\label{eq:v}
+V^{(1,2)}_{ddm}=\eta_{ddm}\frac{\hbar^2 (r_d^{(1)}r_d^{(2)})^{3/2}}{md_{1,2}^5},
+\end{equation}
+%
+where $m$ is the mass of an electron, and $r_d^{(i)}$ is a
+characteristic length for metal $i$ that is related to the spatial
+extent of the $d$-orbitals of that metal, which was obtained from the
+Solid State Table in Reference \citealp{harrison1989}.  The general
+trends in this Table show that $r_d^{(i)}$ increases from right to
+left and from top to bottom among the transition metals in the
+Periodic Table.  Alternatively, $r_d^{(i)}$ can be shown to be
+proportional to the linear muffin tin orbital (LMTO) potential
+parameters by $r_d^{(i)} \propto M_{id}^{2/3} \propto (s_i^5
+\Delta_d^{Andersen})^{1/3}$ \cite{jacobsen1987:_inter,
+  ruban1997:_surfac}. Here $M_{id}$ is an intra-atomic matrix element,
+$s_i$ is the experimental Wigner-Seitz radius and
+$\Delta_d^{Anderson}$ is a potential parameter, both of which can be
+found in Ref.  \cite{andersen1985:_canon_descr_band_struc_metal}.
+Ruban \emph{et al.}  reported coupling matrix elements $V_{ad}^2$, which are
+proportional to $M_{id}^2$, between an adsorbate state and a metal
+$d$-state for all of the transition metals \cite{ruban1997:_surfac}.
+Thus, Eq.  (\ref{eq:v}) is seen to be equivalent to Eq. 6 in Ref.
+\citealp{ruban1997:_surfac}, but applied specifically to the coupling
+between two $d$-states.  $d_{1,2}$ is the internuclear distance between
+atoms $1$ and $2$.  $\eta_{ddm}$ is a dimensionless proportionality
+constant that is formally related to the type of $dd$ orbital bonding
+interaction, such as $V_{dd\sigma}$, $V_{dd\pi}$, or $V_{dd\delta}$.
+We are primarily interested in the proportionality between the
+interatomic matrix element and the $d$-band width, so we take
+$\eta_{ddm}$ to be unity for convenience, and thus treat all of the
+possible interactions in a lumped manner.
+
+Eq.  (\ref{eq:v}) was previously used to describe the ligand effect in
+Pt-3d sandwich structures
+\cite{kitchin2004:_modif_surfac_elect_chemic_proper}. In that work,
+$d_{12}$ represented the interlayer spacing between the surface and
+subsurface layers. In this work, we expand upon this idea, recognizing
+that the ligand effect is incorporated into the numerator of Eq.
+(\ref{eq:v}) through the $r_d^{(i)}$ of each metal, and that strain is
+incorporated into the denominator through the distance between the
+atoms.  We further develop the model by treating the interactions of a
+surface atom with all of the nearest-neighbors individually, including
+the subsurface nearest neighbors, so that the matrix element
+associated with a given surface atom is given by
+%
+\begin{equation}\label{eq:vij}
+V_{i}=7.62\sum_{j=1}^{NN} \frac{(r_d^{(i)}r_d^{(j)})^{3/2}}{d_{ij}^5},
+\end{equation}
+%
+where $\hbar^2/m=7.62$ eV\AA$^2$.
+
+According to tight binding theory, the $d$-band width should be
+proportional to the matrix element given by Eq. (\ref{eq:vij}).  This
+is illustrated in Figure \ref{fig:vw}, where the rms $d$-band width of a
+large number of geometries of both pure and bimetallic Ni, Pd, and
+Pt-containing structures is plotted against their respective
+interatomic matrix elements. These structures include a variety of
+forms of strain, including isotropic and anisotropic strain,
+pseudomorphic monolayers of Ni, Pd, and Pt on Nb, Ta, Mo, W, Re, Ru,
+Ir, Os, Ni and Pt, surface and subsurface alloys (from Ref.
+\cite{kitchin2003:_elucid_ni_pt}), bimetallic sandwich structures
+(from Ref. \cite{kitchin2004:_modif_surfac_elect_chemic_proper}), and
+a variety of coordination environments (sheets, slabs, and solids).
+Clearly, the $d$-band width is closely related to the interatomic matrix
+element that describes the bonding interactions between the $d$-orbitals
+of the atom and its nearest neighbors. We can now provide a
+quantititative understanding of the role of strain. In tensile strain,
+$d_{ij}$ is larger than in the parent metal, resulting in a smaller
+interatomic matrix element, and a narrower $d$-band that is higher in
+energy than the parent metal. In compressive strain, $d_{ij}$ is
+smaller than that of the parent metal, resulting in a larger
+interatomic matrix element, and a wider $d$-band that is lower in energy
+than that of the parent metal.
+ 
+\begin{figure}
+\includegraphics{Fig2}
+\caption{Correlation between the rms $d$-band width and the matrix
+  element. Black symbols indicate a Ni atom, grey symbols indicate Pd,
+  and white indicates Pt. Data points labeled NiPt2.xx refer to Ni/Pt
+  bimetallic surfaces with nearest neighbor distances of 2.77 \AA{} or
+  2.83 \AA \cite{kitchin2003:_elucid_ni_pt}. Details for the Pt-3d
+  surfaces can be found in Ref.
+  \citealp{kitchin2004:_modif_surfac_elect_chemic_proper}. The keyword
+  Uniform indicates the structures were strained uniformly in the unit
+  cell lattice vector directions, otherwise, the structure was
+  strained only in one lattice vector direction. A sheet is a single
+  atomic layer, a slab is three layers thick and separated by five
+  equivalent layers of vacuum. The monolayers are described in the
+  text.
+  \label{fig:vw}}
+\end{figure}
+
+We conclude by showing how these electronic structure modifications
+are manifested in modifying the chemical properties of bimetallic
+surfaces. The adsorption energies and dissociative reaction barriers
+of many small molecules such as CO have been correlated with the
+average energy of the surface $d$-band of pure metal surfaces
+\cite{norskov2002:_univer} and of alloy/overlayer surfaces
+\cite{hammer1996:_co}. We have calculated the dissociative adsorption
+energies for hydrogen on many of the bimetallic monolayer systems
+previously described in this work. In all of these calculations, the
+bimetallic slab was allowed to relax to the lowest energy geometry.
+The positions of the slab ions were subsequently frozen in their
+relaxed positions, and a H atom was placed in a three-fold site and
+allowed to relax to the lowest energy geometry. The dissociative
+adsorption energy was calculated as $\Delta
+H_{diss,ads}=E_{slab,H}-E_{slab}-1/2E_{H_2}$.  The dissociative
+adsorption energies are plotted against the $d$-band center of the
+surfaces in Figure \ref{fig:HBE}, where an obvious trend between the
+dissociative adsorption energy of hydrogen and the surface $d$-band
+center is observed. Thus, the chemical properties of these bimetallic
+surfaces, which include both strain and ligand effects, are modified
+by changes in the $d$-band center of the surface. We would like to note
+that a better correlation between hydrogen adsorption energies and the
+$d$-band center can be obtained if a cutoff radius is introduced in the
+projected density of states. However, the cutoff radius is arbitrary,
+so we have not presented these results.
+
+\begin{figure}
+\includegraphics{Fig3}
+\caption{Correlation between the dissociative adsorption energy of
+  H$_2$ on bimetallic surfaces and the $d$-band center of those
+  surfaces. \label{fig:HBE}}
+\end{figure}
+
+Figure \ref{fig:HBE} contains bimetallic surfaces in which strain and
+the ligand effect work in opposite directions. For example, a Ni
+monolayer on W(110) is under substantial tensile strain ($>10\%$)
+compared to Ni(111), resulting in a narrowing of the $d$-band. However,
+there is a substantial broadening of the Ni $d$-band due to the strong
+bonding interactions with the W substrate.  The net result is a Ni
+$d$-band that is broader and lower in energy than that of Ni(111) and
+that the dissociative adsorption energy of H$_2$ on Ni/W(110) is lower
+than that on Ni(111). For a Ni monolayer on Ru(0001), the tensile
+strain is similar to that on W(110), but the ligand effect is weaker.
+Consequently, the band sharpening effect due to strain is nearly
+balanced by the broadening due to the ligand effect, and the
+calculated electronic and chemical properties of Ni/Ru(0001) are
+nearly identical to those of Ni(111). Finally, for a Ni monolayer on
+Pt(111), the tensile strain is again similar to that on W(110) or
+Ru(0001), but here the ligand effect is the weakest.  Consequently,
+strain dominates the modification with the net effect of narrowing and
+raising in energy of the Ni $d$-band, which results in a stronger
+adsorption energy on this surface. The interatomic matrix elements for
+each Ni surface and the corresponding $d$-band widths are tabulated in
+Table \ref{tab1}. If one uses these matrix elements to predict the
+band widths using the fit in Fig. \ref{fig:vw}, one finds the
+bimetallic band widths are overestimated by 10-20\%. The reason for
+this is clear from Fig. \ref{fig:vw}, in which nearly all of the Ni-containing
+points fall below the best fit line. This suggests that
+element-specific fits may give better predictive results.
+
+\begin{table}%[H] add [H] placement to break table across pages
+\caption{\label{tab1}Comparison of interatomic matrix elements and the
+  DFT $d$-band width.}
+\begin{ruledtabular}
+\begin{tabular}{ccccc}
+\hline
+     &  V  &  W$_{DFT}$  \\\hline
+Ni   & 0.23 & 1.89  \\\hline
+NiPt & 0.17 & 1.35  \\\hline
+NiRu & 0.27 & 1.76  \\\hline
+NiW  & 0.28 & 2.00  \\\hline
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+Finally, the trends reported in this work hold for both
+unrelaxed and relaxed calculations. Allowing slabs to relax had a
+dramatic effect on the electronic structure and adsorption energies in
+some cases, but we found that both properties changed consistently,
+effectively moving up or down the trends accordingly. These findings
+are easily understood by realizing that relaxation of the slab amounts
+to changing the internuclear distances of the atoms in the slab, and
+that these changes are accounted for by the interatomic matrix
+elements in the denominator of Eq. (\ref{eq:vij}). Thus, upon
+relaxation the interatomic matrix elements change, resulting in a
+change in the $d$-band width with a concomitant change in the $d$-band
+center and corresponding adsorption energy. A similar analysis could be
+done to estimate the effects that a surface reconstruction could have on
+chemical reactivity.
+
+In conclusion, the formation of a bimetallic surface results in
+changes in the surface $d$-band width due to the combination of strain
+and ligand effects.  Both of these effects are manifested in the
+interatomic matrix element describing bonding interactions between an
+atom and its nearest neighbors. The $d$-band width and $d$-band center are
+highly correlated to each other due to the fact that the $d$-band
+filling changes negligibly upon the formation of these bimetallic
+surfaces.  Consequently, when the combined effects result in a broader
+$d$-band, the average energy of the $d$-band decreases. In contrast, when
+the combined effects result in a more narrow $d$-band, the average
+energy of the $d$-band is increased. Finally, a reasonable correlation
+between the dissociative adsorption energy of hydrogen and the surface
+$d$-band center has been demonstrated.  The correlations described in the
+current Letter could be used as a first step towards predicting the
+properties of other bimetallic systems or identifying bimetallic
+systems with desirable electronic or chemical properties without the
+need to perform expensive first-principles DFT calculations.  This
+could facilitate narrowing the focus of future studies on bimetallic
+or alloy surfaces.
+
+
+
+\begin{acknowledgments}
+  This work was funded in part by Basic Energy Sciences, Department of
+  Energy (Grant DE-FG02-04ER15501).  The Center for Atomic-scale
+  Materials Physics is sponsored by the Danish National Research
+  Foundation. The DFT calculations have been performed with support
+  from the Danish Center for Scientific Computing through grant no.
+  HDW-1101-05.
+\end{acknowledgments}
+
+% Create the reference section using BibTeX:
+\bibliography{v_w}
+
+\end{document}
+%
+% ****** End of file template.aps ******
+
