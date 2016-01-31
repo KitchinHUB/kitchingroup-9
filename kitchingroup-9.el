@@ -3,6 +3,9 @@
 ;; Copyright (C) 2016  John Kitchin
 
 ;; Author: John Kitchin <jkitchin@andrew.cmu.edu>
+;;   Jens Norskov
+;;   Mark Barteau
+;;   Jingguang Chen
 ;; Keywords:
 ;; Version: 0
 ;; DOI: 10.1103/PhysRevLett.93.156801
