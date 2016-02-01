@@ -10,7 +10,7 @@
 ;; Version: 0
 ;; DOI: 10.1103/PhysRevLett.93.156801
 ;; Journal: Physical Review Letters
-;; Bibtex: ;; @article{kitchin-2004-role,
+;; Bibtex: @article{kitchin-2004-role,
 ;;   author =	 {Kitchin, J. R. and N{\o}rskov, J. K. and Barteau, M. A. and
 ;;                   Chen, J.  G.},
 ;;   title =	 {Role of Strain and Ligand Effects in the Modification of the
