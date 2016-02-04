@@ -1,4 +1,4 @@
-;;; kitchingroup-9.el --- preprint                   -*- lexical-binding: t; -*-
+;;; kitchingroup-9.el --- Role of Strain and Ligand Effects in the Modification of the Electronic and Chemical Properties of Bimetallic Surfaces
 
 ;; Copyright (C) 2016  John Kitchin
 
